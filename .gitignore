@@ -26,3 +26,5 @@ _testmain.go
 *.test
 *.prof
 
+# application binary
+otsuge

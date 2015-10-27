@@ -31,7 +31,7 @@ func checkTerminationTime() (int, string) {
 func main() {
 	mux := http.NewServeMux()
 
-	mux.HandleFunc("/", func(w http.ResponseWriter, req *http.Request) {
+	mux.HandleFunc("/termination-time", func(w http.ResponseWriter, req *http.Request) {
 		statusCode, body := checkTerminationTime()
 		w.WriteHeader(statusCode)
 		fmt.Fprintln(w, body)
